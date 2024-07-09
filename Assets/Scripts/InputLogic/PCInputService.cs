@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class PCInputService : MonoBehaviour
+public class PCInputService : MonoBehaviour, IInputService
 {
     public event UnityAction<Vector2> InputDirection;
     private Vector2 startDragPosition;
-     
+
+    bool IInputService.CanInput { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+
 
     private void Update()
     {

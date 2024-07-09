@@ -1,18 +1,22 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PinsGenerator : MonoBehaviour
 {
+    public event UnityAction PinsGenerated;
     [SerializeField] private Vector3 startPosition;
     [SerializeField] private float offset;
     [SerializeField] private Pin prefab;
     [SerializeField] private int pinsCount;
     private PoolMono<Pin> poolMono;
+    public List<Pin> Pins => poolMono.pool;
     private void Start()
     {
         poolMono = new PoolMono<Pin>(prefab, pinsCount);
-        Generate(4);
+        Generate(4, startPosition);
     }
-    public void Generate(int rowsAmount)
+    public void Generate(int rowsAmount, Vector3 position)
     {
         for (int i = 0; i < rowsAmount; i++)
         {
@@ -43,9 +47,10 @@ public class PinsGenerator : MonoBehaviour
                 if (j < (i + 1) / 2)
                     currentOffset = -currentOffset;
                 Pin pin = poolMono.GetElement();
-                Vector3 pinPositioin = new Vector3(startPosition.x + currentOffset * xMultiply, startPosition.y, startPosition.z + offset * i);
+                Vector3 pinPositioin = new Vector3(position.x + currentOffset * xMultiply, position.y, position.z + offset * i);
                 pin.transform.position = pinPositioin;
             }
         }
+        PinsGenerated?.Invoke();
     }
 }

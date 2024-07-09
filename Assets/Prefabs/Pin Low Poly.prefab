@@ -83,6 +83,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e310814ee533d409cbdf33deb68bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  angleForFall: 35
+  waitSecondsForFall: 2
 --- !u!54 &6098158155016524048
 Rigidbody:
   m_ObjectHideFlags: 0
