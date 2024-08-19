@@ -22,9 +22,9 @@ public class UpgradePanel : MonoBehaviour
     }
     private void OnClick()
     {
-        if (coinsService.TryRemove(cost))
+        if (coinsService.Value>=cost&& _logic.TryUpgrade())
         {
-            _logic.Upgrade();
+            coinsService.TryRemove(cost);
             upgradeProgression.ShowProgress(_logic.CurrentUpgradeValue);
         }
     }

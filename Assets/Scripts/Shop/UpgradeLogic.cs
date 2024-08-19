@@ -16,13 +16,15 @@ public class UpgradeLogic
 
         int amountUpgrades = PlayerPrefs.GetInt(_hash, -1);
         _upgradeValue = new ObservableVariable<int>(amountUpgrades);
-        MaxUpgradeValue = maxUpgradeValue;
     }
 
-    public void Upgrade()
+    public bool TryUpgrade()
     {
+        if(MaxUpgradeValue-1<= _upgradeValue.Value)
+            return false;
         _upgradeValue.Value ++;
         PlayerPrefs.SetInt(_hash, _upgradeValue.Value);
+        return true;
     }
     public void AddObserver(Action<int> @delegate)
     {

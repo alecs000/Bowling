@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,8 +11,10 @@ public class UpgradesService : MonoBehaviour
 
     private List<UpgradeLogic> logics;
     public List<UpgradeLogic> UpgradeLogics => logics;
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return null;
+
         for (int i = 0; i < upgradableItems.Length; i++)
         {
             UpgradeLogic logic = new UpgradeLogic(upgradableItems[i].Hash, maxUpgradeLevel);
@@ -20,5 +23,9 @@ public class UpgradesService : MonoBehaviour
             if(logic.CurrentUpgradeValue !=-1)
                 upgradableItems[i].Upgrade(logic.CurrentUpgradeValue);
         }
+    }
+    private void OnDestroy()
+    {
+        DOTween.KillAll();
     }
 }

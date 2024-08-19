@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -52,5 +53,17 @@ public class PinsGenerator : MonoBehaviour
             }
         }
         PinsGenerated?.Invoke();
+    }
+    public void Clear()
+    {
+        foreach (var pin in poolMono.pool)
+        {
+            pin.gameObject.SetActive(false);
+        }
+        Generate(4, startPosition);
+    }
+    private void OnDestroy()
+    {
+        DOTween.KillAll();
     }
 }

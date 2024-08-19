@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Cinemachine.DocumentationSortingAttribute;
 
 public class UpgradePinsAmount : UpgradableItem
 {
@@ -10,6 +9,7 @@ public class UpgradePinsAmount : UpgradableItem
 
     public override void Upgrade(int level)
     {
+        pinsGenerator.Clear();
         for (int i = 0; i < positions.Length; i++)
         {
             if(i <= level)

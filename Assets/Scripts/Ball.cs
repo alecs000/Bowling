@@ -13,6 +13,7 @@ public class Ball : MonoBehaviour
     [SerializeField] private float maxVelocity = 8;
 
     private bool _isCanMove = true;
+    public bool IsCanMove => _isCanMove;
     void Start()
     {
         _gameInput.InputDirection += MoveBall;
@@ -28,14 +29,23 @@ public class Ball : MonoBehaviour
         {
             return;
         }
+
         BallMoved?.Invoke();
         _isCanMove = false;
-        Vector3 ballDirection = new Vector3(inputDirection.x, transform.position.y, inputDirection.y);
-        Vector3 velocity = force* ballDirection;
+
+        // Ќормализуем inputDirection, чтобы его длина была равна 1
+        inputDirection = inputDirection.normalized;
+
+        Vector3 velocity = new Vector3(inputDirection.x * force, transform.position.y, inputDirection.y * force);
+
+        // ќграничиваем максимальную скорость по оси Z
         if (velocity.z > maxVelocity)
+        {
             velocity.z = maxVelocity;
+        }
+
         velocity.x *= smoothX;
-        _rigidbody.velocity = velocity;
+        _rigidbody.linearVelocity = velocity;
     }
     public void MultiplyVelocity(float multiplier)
     {
