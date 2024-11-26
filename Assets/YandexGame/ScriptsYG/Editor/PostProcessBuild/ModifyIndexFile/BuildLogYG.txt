@@ -1,0 +1,2 @@
+Build path: E:/Apps/xampp/htdocs/Games/BB
+Build number: 1

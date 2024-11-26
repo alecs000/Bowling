@@ -45,7 +45,7 @@ public class Ball : MonoBehaviour
         }
 
         velocity.x *= smoothX;
-        _rigidbody.linearVelocity = velocity;
+        _rigidbody.velocity = velocity;
     }
     public void MultiplyVelocity(float multiplier)
     {

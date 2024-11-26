@@ -24,7 +24,7 @@ public class LoseChecker : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(timeCheck);
-            if(rigidbodyPlayer.linearVelocity.z< amountForLose&&!ball.IsCanMove)
+            if(rigidbodyPlayer.velocity.z< amountForLose&&!ball.IsCanMove)
             {
                 yield return new WaitForSeconds(waitAfterEndGame);
                 EndGame?.Invoke();
