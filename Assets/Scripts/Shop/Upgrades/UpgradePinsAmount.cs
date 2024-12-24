@@ -14,7 +14,7 @@ public class UpgradePinsAmount : UpgradableItem
         {
             if(i <= level)
             {
-                pinsGenerator.Generate(4, positions[i].position);
+                pinsGenerator.Generate(2, positions[i].position);
             }
         }
     }

@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 public class Pin : MonoBehaviour
 {
-    public event UnityAction Fallen;
+    public UnityAction Fallen; 
     [SerializeField] private float angleForFall;
     [SerializeField] private float waitSecondsForFall;
     private bool _isFallen;

@@ -33,19 +33,19 @@ public class Ball : MonoBehaviour
         BallMoved?.Invoke();
         _isCanMove = false;
 
-        // Нормализуем inputDirection, чтобы его длина была равна 1
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ inputDirection, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 1
         inputDirection = inputDirection.normalized;
 
         Vector3 velocity = new Vector3(inputDirection.x * force, transform.position.y, inputDirection.y * force);
 
-        // Ограничиваем максимальную скорость по оси Z
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ Z
         if (velocity.z > maxVelocity)
         {
             velocity.z = maxVelocity;
         }
 
         velocity.x *= smoothX;
-        _rigidbody.velocity = velocity;
+        _rigidbody.linearVelocity = velocity;
     }
     public void MultiplyVelocity(float multiplier)
     {

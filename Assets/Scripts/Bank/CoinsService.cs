@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using PlayerPrefs = RedefineYG.PlayerPrefs;
 public class CoinsService : BankDefault
 {
     private const string Hash = "CoinsServiceHash";

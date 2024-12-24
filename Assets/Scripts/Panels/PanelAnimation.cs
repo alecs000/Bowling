@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using YG;
 
 public class PanelAnimation : MonoBehaviour
 {
@@ -22,7 +23,11 @@ public class PanelAnimation : MonoBehaviour
     private void Start()
     {
         if(closeButton!= null)
-        closeButton.onClick.AddListener(()=>Switch(false));
+        closeButton.onClick.AddListener(OnClose);
+    }
+    private void OnClose()
+    {
+        Switch(false);
     }
     public void Switch(bool isOn =true )
     {
@@ -40,7 +45,8 @@ public class PanelAnimation : MonoBehaviour
         {
             if (!isOn)
             {
-                group.gameObject.SetActive(false);
+                if(group!=null)
+                    group.gameObject?.SetActive(false);
             }
         });
         for (int i = 0; i < rectTransforms.Length; i++)
