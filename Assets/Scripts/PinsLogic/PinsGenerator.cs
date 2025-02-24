@@ -1,4 +1,5 @@
 using DG.Tweening;
+using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -11,14 +12,17 @@ public class PinsGenerator : MonoBehaviour
     [SerializeField] private Pin prefab;
     [SerializeField] private int pinsCount;
     private PoolMono<Pin> poolMono;
+    private List<Pin> upgradedPins;
     public List<Pin> Pins => poolMono.pool;
     private void Start()
     {
+        upgradedPins = new List<Pin>();
         poolMono = new PoolMono<Pin>(prefab, pinsCount);
-        Generate(4, startPosition);
+        Generate(4, startPosition, true);
     }
-    public void Generate(int rowsAmount, Vector3 position)
+    public void Generate(int rowsAmount, Vector3 position, bool isFirst = false)
     {
+
         for (int i = 0; i < rowsAmount; i++)
         {
             for (int j = 0; j < i + 1; j++)
@@ -48,6 +52,10 @@ public class PinsGenerator : MonoBehaviour
                 if (j < (i + 1) / 2)
                     currentOffset = -currentOffset;
                 Pin pin = poolMono.GetElement();
+                if (!isFirst)
+                {
+                    upgradedPins.Add(pin);
+                }
                 Vector3 pinPositioin = new Vector3(position.x + currentOffset * xMultiply, position.y, position.z + offset * i);
                 pin.transform.position = pinPositioin;
             }
@@ -56,11 +64,10 @@ public class PinsGenerator : MonoBehaviour
     }
     public void Clear()
     {
-        foreach (var pin in poolMono.pool)
+        foreach (var pin in upgradedPins)
         {
             pin.gameObject.SetActive(false);
         }
-        Generate(4, startPosition);
     }
     private void OnDestroy()
     {

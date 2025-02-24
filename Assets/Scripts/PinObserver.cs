@@ -17,7 +17,7 @@ public class PinObserver : MonoBehaviour
     {
         for (int i = 0; i < pinsGenerator.Pins.Count; i++)
         {
-            pinsGenerator.Pins[i].Fallen += OnPinFallen;
+            pinsGenerator.Pins[i].Fallen = OnPinFallen;
         }
     }
     private void OnPinFallen()
