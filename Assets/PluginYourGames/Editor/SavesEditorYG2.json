@@ -1,0 +1,15 @@
+{
+    "stringKeys": [],
+    "stringValues": [],
+    "floatKeys": [],
+    "floatValues": [],
+    "intKeys": [
+        "CoinsServiceHash",
+        "SphiereHash"
+    ],
+    "intValues": [
+        0,
+        0
+    ],
+    "idSave": 5
+}

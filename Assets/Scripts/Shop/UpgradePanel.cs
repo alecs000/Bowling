@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using PlayerPrefs = RedefineYG.PlayerPrefs;
 
 public class UpgradePanel : MonoBehaviour
 {
@@ -44,6 +45,7 @@ public class UpgradePanel : MonoBehaviour
                 costText.gameObject.SetActive(false);
                 complete.gameObject.SetActive(true);
             }
+            PlayerPrefs.Save();
         }
     }
 }
