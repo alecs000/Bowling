@@ -1,0 +1,416 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0693fd5cd2e16ba41815ea9b1de6c40d, type: 3}
+  m_Name: DisbandMoveToAppFolderDirectoryToolConfig
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: OnMaxProgressValueChanged
+      Entry: 6
+      Data: 
+    - Name: OnCurrentProgressValueChanged
+      Entry: 6
+      Data: 
+    - Name: RelatedDirectoryNames
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.HashSet`1[[System.String,
+        mscorlib]], System.Core]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 11
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Assets/!_App/Scripts
+    - Name: $v
+      Entry: 7
+      Data: 2|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: Script
+    - Name: 
+      Entry: 1
+      Data: Scripts
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Assets/!_App/Animations
+    - Name: $v
+      Entry: 7
+      Data: 3|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 1
+      Data: Anim
+    - Name: 
+      Entry: 1
+      Data: Anims
+    - Name: 
+      Entry: 1
+      Data: Animation
+    - Name: 
+      Entry: 1
+      Data: Animations
+    - Name: 
+      Entry: 1
+      Data: Timeline
+    - Name: 
+      Entry: 1
+      Data: Timelines
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Assets/!_App/Materials
+    - Name: $v
+      Entry: 7
+      Data: 4|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Material
+    - Name: 
+      Entry: 1
+      Data: Materials
+    - Name: 
+      Entry: 1
+      Data: Matherial
+    - Name: 
+      Entry: 1
+      Data: Matherials
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Assets/!_App/Models
+    - Name: $v
+      Entry: 7
+      Data: 5|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Model
+    - Name: 
+      Entry: 1
+      Data: Models
+    - Name: 
+      Entry: 1
+      Data: Mesh
+    - Name: 
+      Entry: 1
+      Data: Meshs
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Assets/!_App/Prefabs
+    - Name: $v
+      Entry: 7
+      Data: 6|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: Prefab
+    - Name: 
+      Entry: 1
+      Data: Prefabs
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Assets/!_App/Shaders
+    - Name: $v
+      Entry: 7
+      Data: 7|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: Shader
+    - Name: 
+      Entry: 1
+      Data: Shaders
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Assets/!_App/Scenes
+    - Name: $v
+      Entry: 7
+      Data: 8|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: Scene
+    - Name: 
+      Entry: 1
+      Data: Scenes
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Assets/!_App/Resources
+    - Name: $v
+      Entry: 7
+      Data: 9|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: Resources
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Assets/!_App/Graphics/Sprites
+    - Name: $v
+      Entry: 7
+      Data: 10|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 10
+    - Name: 
+      Entry: 1
+      Data: Sprite
+    - Name: 
+      Entry: 1
+      Data: Sprites
+    - Name: 
+      Entry: 1
+      Data: Texture
+    - Name: 
+      Entry: 1
+      Data: Textures
+    - Name: 
+      Entry: 1
+      Data: Art
+    - Name: 
+      Entry: 1
+      Data: Arts
+    - Name: 
+      Entry: 1
+      Data: Img
+    - Name: 
+      Entry: 1
+      Data: Imgs
+    - Name: 
+      Entry: 1
+      Data: Image
+    - Name: 
+      Entry: 1
+      Data: Images
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Assets/!_App/Graphics/Fonts
+    - Name: $v
+      Entry: 7
+      Data: 11|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: Font
+    - Name: 
+      Entry: 1
+      Data: Fonts
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Assets/!_App/Graphics/Audio
+    - Name: $v
+      Entry: 7
+      Data: 12|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 9
+    - Name: 
+      Entry: 1
+      Data: Sound
+    - Name: 
+      Entry: 1
+      Data: Sounds
+    - Name: 
+      Entry: 1
+      Data: Music
+    - Name: 
+      Entry: 1
+      Data: Musics
+    - Name: 
+      Entry: 1
+      Data: Audio
+    - Name: 
+      Entry: 1
+      Data: AudioClip
+    - Name: 
+      Entry: 1
+      Data: AudioClips
+    - Name: 
+      Entry: 1
+      Data: AudioMixer
+    - Name: 
+      Entry: 1
+      Data: AudioMixers
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  CanShowLogs: 1
+  DisbandedDirectoryPath: Assets/!_MoveToAppFolder
+  DisbandedParentDirectoryName: _Game
+  DisbandedDirectoryName: '{0}_{1}'

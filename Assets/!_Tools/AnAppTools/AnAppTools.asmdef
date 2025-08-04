@@ -1,0 +1,21 @@
+{
+    "name": "AnAppTools",
+    "rootNamespace": "AnAppTools",
+    "references": [
+        "GUID:ad968d605628d06499b62cdc30f11cf8",
+        "GUID:1f0f986cee947694aaf7bd0906a57b1a",
+        "GUID:efbe26d6b9b0a7745bf0fecffed5dbe6",
+        "GUID:d5b112c1a9d6d4d46a19605936bb0e0e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

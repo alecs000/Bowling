@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eab69fd1f6fbd6489a638164bba01b8, type: 3}
+  m_Name: ImportGraphicsToolConfig
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: OnMaxProgressValueChanged
+      Entry: 6
+      Data: 
+    - Name: OnCurrentProgressValueChanged
+      Entry: 6
+      Data: 
+    - Name: AllowedImageExtensions
+      Entry: 7
+      Data: 0|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: .png
+    - Name: 
+      Entry: 1
+      Data: .jpg
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: AllowedFontExtensions
+      Entry: 7
+      Data: 1|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: .ttf
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: AllowedZipExtensions
+      Entry: 7
+      Data: 2|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: .zip
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: AllowedAudioExtensions
+      Entry: 7
+      Data: 3|System.Collections.Generic.HashSet`1[[System.String, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: .mp3
+    - Name: 
+      Entry: 1
+      Data: .wav
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  CanShowLogs: 0
+  ImportedImageName: Image_{0}
+  ImportedFontName: Font_{0}
+  ImportedAudioName: Audio_{0}
+  PythonFullName: C:/Program Files/Python311/python.exe
+  AutocropImagesPythonScriptPath: Assets/Plugins/AnAppTools/Scripts/Python/AutocropImages.py
+  CanFindImportedGraphicsDirectoryByProjectName: 1
+  SpritesDirectoryPath: Assets/!_App/Graphics/Sprites
+  FontsDirectoryPath: Assets/!_App/Graphics/Fonts
+  AudioDirectoryPath: Assets/!_App/Graphics/Audio
+  ImportedGraphicsDirectoryPath: C:/Users/NULL/Downloads/NULL
+  ImportedGraphicsParentDirectoryPath: C:/Users/denis/Desktop

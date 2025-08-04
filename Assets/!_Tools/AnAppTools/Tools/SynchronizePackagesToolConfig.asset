@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d9d15bacb641a04b9d1f2260908ad6b, type: 3}
+  m_Name: SynchronizePackagesToolConfig
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: OnMaxProgressValueChanged
+      Entry: 6
+      Data: 
+    - Name: OnCurrentProgressValueChanged
+      Entry: 6
+      Data: 
+  ShowLogs: 0
+  NameOfPackagesToRemove:
+  - com.unity.ide.visualstudio
+  - com.unity.ide.rider
+  - com.unity.ai.navigation
+  NameOfPackagesToAdd:
+  - com.unity.recorder
+  - com.unity.nuget.newtonsoft-json
+  - com.unity.textmeshpro
+  - com.unity.ide.vscode
+  - com.unity.device-simulator.devices
+  - com.unity.purchasing
+  - com.unity.ads.ios-support
+  - com.unity.adaptiveperformance
+  - com.unity.adaptiveperformance.samsung.android
+  - com.unity.mobile.notifications

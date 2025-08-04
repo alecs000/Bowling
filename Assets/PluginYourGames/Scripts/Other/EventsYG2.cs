@@ -73,7 +73,7 @@ namespace YG
             for (int i = 0, imax = triggers.Count; i < imax; ++i)
             {
                 var ent = triggers[i];
-                if (ent.eventID == id && ent.callback != null)
+                if (ent.eventID == id)
                     ent.callback?.Invoke();
             }
         }
@@ -89,7 +89,7 @@ namespace YG
 #endif
 #if RewardedAdv_yg
             YG2.onOpenRewardedAdv += OnOpenRewardedAdv;
-            YG2.onCloseRewaededAdv += OnCloseRewaededAdv;
+            YG2.onCloseRewardedAdv += OnCloseRewaededAdv;
             YG2.onRewardAdv += OnRewardAdv;
             YG2.onErrorRewardedAdv += OnErrorRewardedAdv;
 #endif
@@ -117,7 +117,7 @@ namespace YG
 #endif
 #if RewardedAdv_yg
             YG2.onOpenRewardedAdv -= OnOpenRewardedAdv;
-            YG2.onCloseRewaededAdv -= OnCloseRewaededAdv;
+            YG2.onCloseRewardedAdv -= OnCloseRewaededAdv;
             YG2.onRewardAdv -= OnRewardAdv;
             YG2.onErrorRewardedAdv -= OnErrorRewardedAdv;
 #endif
