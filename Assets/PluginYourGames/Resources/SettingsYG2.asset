@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: SettingsYG2
   m_EditorClassIdentifier: 
   Authorization:
-    scopes: 1
     playerPhotoSize: 1
     authorized: 1
     playerName: Player current
@@ -29,7 +28,6 @@ MonoBehaviour:
   Storage:
     saveLocal: 1
     saveCloud: 1
-    saveCloudInterval: 0
     flush: 0
   Basic:
     platform: {fileID: 11400000, guid: c2a303d33a9fd394bae4c4b88b9a1c44, type: 2}
@@ -51,7 +49,7 @@ MonoBehaviour:
     loadAdv: 0
     testFailAds: 0
   Templates:
-    logoImageFormat: 1
+    logoImageFormat: 0
     backgroundImgFormat: 0
     gradientBackgroundByLoadGame:
       radial: 0
@@ -68,7 +66,10 @@ MonoBehaviour:
       color2: {r: 1, g: 0.831, b: 0.149, a: 0.7}
     fixedAspectRatio: 0
     aspectRatio: 16/9
+    disableForMobile: 1
     fillBackground: 0
+    imageBackground: 0
+    imageName: background.jpg
     gradientBackgroundByAspectRatio:
       radial: 0
       angleInclination: 140
